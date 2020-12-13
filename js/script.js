@@ -20,10 +20,10 @@ window.addEventListener('load', () => {
         //Create bubbles
         const bubble = document.createElement("div");
         visual.appendChild(bubble);
-         colorsbubble.style.backgroundColor =[index];
+        bubble.style.backgroundColor = colors[index];
         bubble.style.animation = `jump 1s ease`;
         bubble.addEventListener("animationend", function() {
           visual.removeChild(this);
         });
       };
-});
+    });
